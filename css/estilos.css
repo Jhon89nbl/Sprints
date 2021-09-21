@@ -101,12 +101,11 @@ body {
 }
 
 /* 1201px and more —  Extra large screens, TV, Desktop */ 
- @media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1201px) {
     body {
         background-color: rgb(255, 166, 0);
         color: beige;
     }
-   
 }
 
 
