@@ -1,3 +1,8 @@
+header, #logo{
+   object-position: left top;
+    margin-top: 0px;
+    background-color: rebeccapurple;
+}
 header {
     position: fixed;
     margin: 0;
