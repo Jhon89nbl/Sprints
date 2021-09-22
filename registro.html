@@ -13,16 +13,33 @@
 
 <body>
     <!-- Se incluye Header para dar formato con css -->
-    <header class="header">
-        <h1>Formulario</h1>
+    <header>
+        <nav id="nav-menu">
+            <div >     
+                <a href="index.html"> <img src="images/logo4.png " id="logo" alt="" srcset=""> </a>
+            </div>
+
+            <div class="menu">
+                <label for="menu-check" class="material-icons">menu</label>
+                <input id="menu-check" type="checkbox" name="menu-check">
+                <i class="fas fa-bars" ></i>
+                <!--Hasta esta linea  -->
+                <div id="drop-menu">
+                    <button id="btn-inicio" type="button">
+                        <a id="enlace-registro" href="index.html">Inicio</a>
+                    </button>
+                    <button id="btn-registrar" type="button">
+                        <a id = "enlace-registro" href = "registro.html"> Registrar </a>
+                    </button>
+                </div>
+            </div>     
+        </nav>
     </header>
-    
+    <main>
     <!--Sebastian Enamorado-->
+    <h1 id="titulo">Registro</h1>
     <form id="form-registro">
         <!--Sebastian Enamorado-->
-        <h1>Registro</h1>
-    
-
         <!--alinear formulario en medio(css)-->
         <br>
         <label for="nombre">Nombre</label>
@@ -76,6 +93,7 @@
 
         <input type="submit" id="btn-submit-form" Value="Registrar" />
     </form>
+    </main>
 </body>
 
 </html>
