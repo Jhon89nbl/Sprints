@@ -8,91 +8,92 @@
     <title>Registro</title>
     <!-- Se linkea la hoja de estilo css -->
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 
 <body>
     <!-- Se incluye Header para dar formato con css -->
     <header>
-        <nav id="nav-menu">
-            <div >     
-                <a href="index.html"> <img src="images/logo4.png " id="logo" alt="" srcset=""> </a>
-            </div>
+        <div id="nav-menu">
 
-            <div class="menu">
-                <label for="menu-check" class="material-icons">menu</label>
+            <a href="index.html"> <img src="images/logo4.png " id="logo" alt="" srcset=""> </a>
+
+            <div id="div-titulo">
+
                 <input id="menu-check" type="checkbox" name="menu-check">
-                <i class="fas fa-bars" ></i>
+                <i class="fas fa-bars"></i>
+                <h1 id="titulo">Registro</h1>
                 <!--Hasta esta linea  -->
                 <div id="drop-menu">
                     <button id="btn-inicio" type="button">
                         <a id="enlace-registro" href="index.html">Inicio</a>
                     </button>
-                    <button id="btn-registrar" type="button">
-                        <a id = "enlace-registro" href = "registro.html"> Registrar </a>
-                    </button>
+                    <!--<button id="btn-registrar" type="button">
+                        <a id="enlace-registro" href="registro.html"> Registrar </a>
+                    </button>-->
                 </div>
-            </div>     
-        </nav>
+            </div>
+        </div>
     </header>
     <main>
-    <!--Sebastian Enamorado-->
-    <h1 id="titulo">Registro</h1>
-    <form id="form-registro">
         <!--Sebastian Enamorado-->
-        <!--alinear formulario en medio(css)-->
-        <br>
-        <label for="nombre">Nombre</label>
-        <!--nombre-->
-        <br>
-        <input type="text" id="nombre" />
-        <br>
-        <br>
-        <label>Género</label>
-        <br>
-        <input type="radio" id="masculino" name="genero" />
-        <label for="masculino">M</label>
-        <!--checkbox masculino-->
-        <input type="radio" id="femenino" name="genero" />
-        <label for="femenino">F</label>
-        <!--checkbox femenino-->
-        <br>
-        <br>
-        <label for="telefono" >Teléfono</label>
-        <!--cel-->
-        <br>
-        <input type="tel" id="telefono"/>
-        <br>
-        <br>
+        <form id="form-registro">
+            <!--Sebastian Enamorado-->
+            <!--alinear formulario en medio(css)-->
+            <br>
+            <label for="nombre">Nombre</label>
+            <!--nombre-->
+            <br>
+            <input type="text" id="nombre" />
+            <br>
+            <br>
+            <label>Género</label>
+            <br>
+            <input type="radio" id="masculino" name="genero" />
+            <label for="masculino">M</label>
+            <!--checkbox masculino-->
+            <input type="radio" id="femenino" name="genero" />
+            <label for="femenino">F</label>
+            <!--checkbox femenino-->
+            <br>
+            <br>
+            <label for="telefono">Teléfono</label>
+            <!--cel-->
+            <br>
+            <input type="tel" id="telefono" />
+            <br>
+            <br>
 
-        <!--Hasta esta linea  -->
-        <!------- Johan Bayer --------->
-        
-        <!--Direccion-->
+            <!--Hasta esta linea  -->
+            <!------- Johan Bayer --------->
 
-        <label for="direccion">Dirección</label>
-        <br>
-        <input type="text" id="direccion" />
-        <br>
-        <br>
+            <!--Direccion-->
 
-        <!--Correo-->
-        <label for="correo">Correo</label>
-        <br>
-        <input type="email" id="correo">
-        <br>
-        <br>
+            <label for="direccion">Dirección</label>
+            <br>
+            <input type="text" id="direccion" />
+            <br>
+            <br>
 
-        <!--Contraseña-->
-        <label for="contrasena">Contraseña</label>
-        <br>
-        <input type="password" id="contrasena"/>
-        <br>
-        <br>
-        <br>
+            <!--Correo-->
+            <label for="correo">Correo</label>
+            <br>
+            <input type="email" id="correo">
+            <br>
+            <br>
 
-        <input type="submit" id="btn-submit-form" Value="Registrar" />
-    </form>
+            <!--Contraseña-->
+            <label for="contrasena">Contraseña</label>
+            <br>
+            <input type="password" id="contrasena" />
+            <br>
+            <br>
+            <br>
+
+            <input type="submit" id="btn-submit-form" Value="Registrar" />
+        </form>
     </main>
 </body>
 

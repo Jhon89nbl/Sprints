@@ -1,32 +1,88 @@
 *{
     margin: 0;
 }
-
+header{
+    width: 100%;
+}
 #nav-menu {
-    background-color: rgb(30, 210, 81);
-    height: 4em;
+    background-color: rgb(30, 210, 81);    
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
-#menu-check {
-    display: none;
+#menu-check, .fa-bars {
+    position: absolute;
+    margin:0;
+    padding:0;
+    right: 25px;
+    top: 25px;
+    width: 30px;
+    height: 30px;
 }
-
-#menu-check:checked~#drop-menu {
-    display: flex;
-    flex-direction: column;
+.fa-bars {
+    font-size: 2rem;
+    pointer-events: none
+}
+#menu-check{
+    opacity: 0;
+    
+}
+#drop-menu{
+    background-color: rgb(14, 173, 105);
+    position: absolute;
+    margin:0;
+    padding:0;
+    right: 0px;
+    top: 55px;
+    width: 200px;
+    height: 280px;
+    border-radius:6px;
+    text-align: center;
+}
+#btn-registrar{
+    position: relative;
+    top: 30px;
+    width: 150px;
+    height: 30px;
+    border-radius: 6px;
+    border-style: none;
+    background-color: rgb(0, 128, 0);
+}
+#btn-inicio{
+    position: relative;
+    top: 30px;
+    width: 150px;
+    height: 30px;
+    border-radius: 6px;
+    border-style: none;
+    background-color: rgb(0, 128, 0);
+}
+#enlace-registro{
+    text-decoration: none;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+    color: white;
+    
 }
 #drop-menu>button:hover {
-    background-color: red;
+    background-color: rgb(1, 145, 1);
+}
+
+#drop-menu{
+    display: none;
+}
+#menu-check:checked~#drop-menu {
+    display: block;
+    
 }
 
 .headerfor #nav-menu h1{
     text-align: center;
 }
 
-div #logo {
+#logo {
     width: 70px;
     margin-left: 0.5rem;
     
@@ -37,18 +93,21 @@ div #logo {
 }
 
 
-
-
-h1{
+/*h1{
     text-align: center;
-    /* margin-bottom: 21px; */
+    /* margin-bottom: 21px;
     font-family: "Roboto", sans-serif;
     color:rgb(0, 255, 72);
     font-weight: bolder;
     font-size: 2em;
     flex-direction: column; 
-}
+}*/
 
+#titulo{
+    position: absolute;
+    right: 39%;
+    top: 20px;
+}
 
 body {
     background-color: rgb(242, 242, 242);
@@ -62,9 +121,10 @@ body {
     padding: 0.5rem;
     text-align: center;
     background-color: rgb(0, 255, 30);
-    border-radius: 40px;
+    border-radius: 10px;
+    border-style: none;
     color: rgb(0, 0, 0);
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     /* text-shadow: 1px 1px 1px rgb(0, 0, 0); */
 }
 #btn-submit-form:hover {
