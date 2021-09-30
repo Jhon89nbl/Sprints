@@ -7,15 +7,16 @@ Jorge -------/*/
 
 function checkNombre(valor) {
 
-
-
-
-
-
-
-
-
-
+    
+    if (valor.length>=4 && valor.length<=30){
+        if (valor.length!= 0 && typeof(valor)=='string'){
+            return true
+      }
+    }
+    
+    return false
+    
+    
 
 
 }
