@@ -15,8 +15,8 @@ function checkNombre(valor) {
     
     if (valor.length>=4 && valor.length<=30){
         if (valor.length!= 0 && typeof(valor)=='string'){
-            return true
-       }
+            return true;
+        }
     }
     
     return false;
@@ -49,3 +49,39 @@ function checkTelefono(valor) {
 
 module.export = checkTelefono;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** 5 validar el campo correo, este campo de 
+presentar la estructura de un correo, es decir, 
+debe verse de la siguiente manera:
+usuario@correo.com
+Por lo que debe incluir @ seguido del dominio
+del correo. Así mismo, el campo no puede
+estar vacío Jhon Vargas*/
+
+function checkCorreo() {
+    var valor = document.getElementById("correo").value;
+    let emailval = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+    if(!emailval.test(valor) || valor==""){
+        return false;
+    }else{
+        return true;
+    }
+
+
+}
+
+module.exports= checkCorreo;
