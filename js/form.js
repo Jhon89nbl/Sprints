@@ -40,8 +40,12 @@ Sebastian ------------------------/*/
 function checkTelefono(valor) {
 
     var valor = document.getElementById("telefono").value;
-    if(valor == null || valor.length == 0){
+    if(valor.length == 0){
         alert("El campo de telefono no puede quedar vacio");
+        return;
+    }
+    if(valor.length > 7){
+        alert("el campo no puede ser mayor de 7 digitos");
         return;
     }
 }
