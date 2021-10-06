@@ -54,12 +54,47 @@ function checkTelefono(valor) {
 module.export = checkTelefono;
 
 
+/**Validacion Contraseña */
 
+function checkContrasena(valor) {
+    //const passwordValue= password.value.trim();
+    let minusculas = "abcdefghijklmnñopqrstuvwxyz";
+    let mayusculas = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
+    let numeros = "0123456789";
+    let tamañoCadena = valor.length;
+    let result = true;
+    let contMinus = 0;
+    let contMayus = 0;
+    let contNum = 0;
+    for (i = 0; i < valor.length; i++) {
+        if (minusculas.indexOf(valor.charAt(i), 0) != -1) {
+            contMinus += 1;
+        }
+        if (mayusculas.indexOf(valor.charAt(i), 0) != -1) {
+            contMayus += 1;
+        }
+        if (numeros.indexOf(valor.charAt(i), 0) != -1) {
+            contNum += 1;
+        }
+    }
+    if (contMinus == 0 || contMayus == 0 || contNum == 0 || tamañoCadena < 8) {
+        result = false;
+    }
+    if (valor === "" || valor === null || valor === undefined) {
+        result = false;
+    }
+    return result;
+}
 
+/**Validacccion Direccion */
+function checkDir(valor){
 
-
-
-
+    var valor = document.getElementById("direccion");
+    if(valor == null || valor.length == 0 || !/[a-zA-Z]+\w|[ \w-#]}/.exec(valorDireccion) ){
+        console.log("El campo de telefono no puede quedar vacio");
+        alert("El campo de telefono no puede quedar vacio");
+    }
+}
 
 
 
