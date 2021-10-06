@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <!-- Se linkea la hoja de estilo css -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+
+    <script src="../Sprints/js/form.js"></script>
+<body>
+    <!-- Se incluye Header para dar formato con css -->
+    <header>
+        <div id="nav-menu">
+
+            <a href="index.html"> <img src="images/logo4.png " id="logo" alt="" srcset=""> </a>
+
+            <div id="div-titulo">
+
+                <input id="menu-check" type="checkbox" name="menu-check">
+                <i class="fas fa-bars"></i>
+                <h1 id="titulo">Registro</h1>
+                <!--Hasta esta linea  -->
+                <div id="drop-menu">
+                    <button id="btn-inicio" type="button">
+                        <a id="enlace-registro" href="index.html">Inicio</a>
+                    </button>
+                    <!--<button id="btn-registrar" type="button">
+                        <a id="enlace-registro" href="registro.html"> Registrar </a>
+                    </button>-->
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!--Sebastian Enamorado-->
+        <form id="form-registro">
+            <!--alinear formulario en medio(css)-->
+            <br>
+            <label for="nombre">Nombre</label>
+            <!--nombre-->
+            <br>
+            <input type="text" id="nombre" />
+            <br>
+            <br>
+            <label>Género</label>
+            <br>
+            <input type="radio" id="masculino" name="genero" />
+            <label for="masculino">M</label>
+            <!--checkbox masculino-->
+            <input type="radio" id="femenino" name="genero" />
+            <label for="femenino">F</label>
+            <!--checkbox femenino-->
+            <br>
+            <br>
+            <label for="telefono">Teléfono</label>
+            <!--cel-->
+            <br>
+            <input type="tel" maxlength="7" id="telefono" />
+            <br>
+            <br>
+
+            <!--Hasta esta linea  -->
+            <!------- Johan Bayer --------->
+
+            <!--Direccion-->
+
+            <label for="direccion">Dirección</label>
+            <br>
+            <input type="text" id="direccion" />
+            <br>
+            <br>
+
+            <!--Correo-->
+            <label for="correo">Correo</label>
+            <br>
+            <input type="email" id="correo">
+            <br>
+            <br>
+
+            <!--Contraseña-->
+            <label for="contrasena">Contraseña</label>
+            <br>
+            <input type="password" id="contrasena" />
+            <br>
+            <br>
+            <br>
+
+            <input type="submit" id="btn-submit-form" Value="Registrar" onclick="checkTelefono()"/>
+        </form>
+    </main>
+</body>
+
+</html>

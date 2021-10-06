@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+}
+header{
+    width: 100%;
+}
+#nav-menu {
+    background-color: rgb(30, 210, 81);    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#menu-check, .fa-bars {
+    position: absolute;
+    margin:0;
+    padding:0;
+    right: 25px;
+    top: 25px;
+    width: 30px;
+    height: 30px;
+}
+.fa-bars {
+    font-size: 2rem;
+    pointer-events: none
+}
+#menu-check{
+    opacity: 0;
+    
+}
+#drop-menu{
+    background-color: rgb(14, 173, 105);
+    position: absolute;
+    margin:0;
+    padding:0;
+    right: 0px;
+    top: 55px;
+    width: 200px;
+    height: 280px;
+    border-radius:6px;
+    text-align: center;
+}
+#btn-registrar{
+    position: relative;
+    top: 30px;
+    width: 150px;
+    height: 30px;
+    border-radius: 6px;
+    border-style: none;
+    background-color: rgb(0, 128, 0);
+}
+#btn-inicio{
+    position: relative;
+    top: 30px;
+    width: 150px;
+    height: 30px;
+    border-radius: 6px;
+    border-style: none;
+    background-color: rgb(0, 128, 0);
+}
+#enlace-registro{
+    text-decoration: none;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+    color: white;
+    
+}
+#drop-menu>button:hover {
+    background-color: rgb(1, 145, 1);
+}
+
+#drop-menu{
+    display: none;
+}
+#menu-check:checked~#drop-menu {
+    display: block;
+    
+}
+
+.headerfor #nav-menu h1{
+    text-align: center;
+}
+
+#logo {
+    width: 70px;
+    margin-left: 0.5rem;
+    
+}
+
+#form-registro{
+    text-align: center;
+}
+
+
+/*h1{
+    text-align: center;
+    /* margin-bottom: 21px;
+    font-family: "Roboto", sans-serif;
+    color:rgb(0, 255, 72);
+    font-weight: bolder;
+    font-size: 2em;
+    flex-direction: column; 
+}*/
+
+#titulo{
+    position: absolute;
+    right: 39%;
+    top: 20px;
+}
+
+body {
+    background-color: rgb(242, 242, 242);
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#btn-submit-form {
+    width: 10rem;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: rgb(0, 255, 30);
+    border-radius: 10px;
+    border-style: none;
+    color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* text-shadow: 1px 1px 1px rgb(0, 0, 0); */
+}
+#btn-submit-form:hover {
+    
+    cursor: pointer;
+    background-color: rgb(27, 201, 0);
+    text-shadow: 1px 1px 1px rgb(97, 201, 23);
+    color: rgb(255, 255, 255);
+}
+
+/* Resoluciones de dispositivos 
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
+
+/* Dispositivos con pantalla menor a 320px */
+@media only screen and (max-width: 320px) {
+    body {
+        background-color: rgb(255, 123, 0);
+        color: pink;
+    }
+    /* p:last-child {
+        display: block;
+    } */
+}
+/* 320px — 480px: Mobile devices */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    body {
+        background-color: purple;
+        color: pink;
+    }
+    /* p:last-child {
+        display: block;
+    } */
+}
+
+/* 481px — 768px: iPads, Tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        background-color: #4361ee;
+        color: rgb(0, 21, 128);
+    }
+    /* p:nth-child(2) {
+        display: block;
+    } */
+}
+/* 769px — 1024px: Small screens, laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        background-color: #4361ee;
+        color: rgb(0, 90, 128);
+    }
+    /* p:nth-child(2) {
+        display: block;
+    } */
+}
+
+/* 1025px — 1200px: Desktops, large screens */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    body {
+        background-color: #02892d;
+        color: purple;
+    }
+    /* p:nth-child(2) {
+        display: block;
+    } */
+}
+
+/* 1201px and more —  Extra large screens, TV, Desktop */ 
+@media only screen and (min-width: 1201px) {
+    body {
+        background-color: rgb(255, 166, 0);
+        color: beige;
+    }
+}
