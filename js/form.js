@@ -37,16 +37,17 @@ checkTelefono(valor)
 module.exports = checkTelefono
 Sebastian ------------------------/*/
 
-function checkTelefono(valor) {
+function checkDir(valor){
 
-    var valor = document.getElementById("telefono").value;
-    if(valor.length == 0){
-        alert("El campo de telefono no puede quedar vacio");
-        return;
+    console.log("Verificando Direccion");
+    var expRegDir=/^[A-Z \d \# \-]+$/i;
+    if(valor == null || valor.length == 0 || !expRegDir.exec(valor) ){
+        console.log("El campo de direccion no puede quedar vacio o esta mal escrito");
+        return false;
     }
-    if(valor.length > 7){
-        alert("el campo no puede ser mayor de 7 digitos");
-        return;
+    else{
+        console.log("Ok",valor)
+        return true;
     }
 }
 
