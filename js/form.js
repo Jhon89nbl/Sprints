@@ -6,8 +6,6 @@
 
 
 
-module.exports = checkNombre;
-checkNombre(valor)
 //Jorge -------
 
 function checkNombre(valor) {
@@ -124,4 +122,17 @@ function checkCorreo() {
 
 }
 
-module.exports= checkCorreo;
+// function saludar(){
+//     console.log("HOLA MUNDO");
+// }
+
+
+module.exports = {
+    // saludar,
+    checkNombre,
+    checkTelefono,
+    checkDir,
+    checkCorreo,
+    checkContrasena,
+    
+}
